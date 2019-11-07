@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="amazon_assignment" thread-count="2" verbose="1" parallel="tests">
+    <listeners>
+        <listener class-name="utils.Reporting"></listener>
+    </listeners>
+    <test name="Amazon search item test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testCases.TC_SearchItem_Amazon_001"></class>
+        </classes>
+    </test>
+
+</suite>
